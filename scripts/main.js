@@ -4,12 +4,13 @@ function main() {
     if (latte_flags)
         displayJSONData(latte_flags);
 
-    document.getElementById('download_btn').addEventListener('click', () => {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(selectedFlags, null, 2));
-        const downloadAnchor = document.createElement('a');
-        downloadAnchor.setAttribute("href", dataStr);
-        downloadAnchor.setAttribute("download", "selected_flags.json");
-        downloadAnchor.click();
+    document.getElementById('copy_btn').addEventListener('click', () => {
+        const jsonString = JSON.stringify(selectedFlags, null, 2);
+        navigator.clipboard.writeText(jsonString).then(() => {
+            alert("JSON copied to clipboard!");
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
     });
 }
 
