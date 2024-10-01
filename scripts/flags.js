@@ -274,6 +274,128 @@ const latte_flags = {
         }
     ],
 
+    "Quality of Life": [
+        {
+            "name": "Disable VC",
+            "description": "NOTE: Setting this to True will not do anything<br></br>TIP: Use PlaceFilter for specific games, Use a new Bloxstrap build from GitHub Actions in Bloxstrap Repository to be able to use PlaceFilter",
+            "flags": {
+                "DFFlagVoiceChat4": "False"
+            }
+        },
+        {
+            "name": "5 Decimal Sensitivity Precision",
+            "flags": {
+                "FFlagFixSensitivityTextPrecision": "False"
+            }
+        },
+        {
+            "name": "Removes translated supported message on join",
+            "description": "NOTE: 'Roblox automatically translates supported languages in chat.'",
+            "flags": {
+                "FFlagChatTranslationEnableSystemMessage": false
+            }
+        },
+        {
+            "name": "Allows you to customize which languages are available for the chat translation feature",
+            "description": "IMPORTANT: English cannot be removed.<br></br>@thefrenchguy4",
+            "flags": {
+                "FStringChatTranslationEnabledLocales": "es_es,fr_fr,pt_br,de_de,it_it,ja_jp,ko_kr,id_id,tr_tr,zh_cn,zh_tw,th_th,pl_pl,vi_vn,ru_ru,"
+            }
+        },
+        {
+            "name": "Remove long recommended section in homepage",
+            "flags": {
+                "FIntGameGridFlexFeedItemTileNumPerFeed": "0"
+            }
+        },
+        {
+            "name": "Disable Captures Keybind",
+            "flags": {
+                "FFlagEnableCapturesHotkeyExperiment_v4": "False"
+            }
+        },
+        {
+            "name": "Reduced Avatar Item Particle in FP",
+            "flags": {
+                "FFlagUserHideCharacterParticlesInFirstPerson": "True"
+            }
+        },
+        {
+            "name": "FPS Unlocker in Roblox Menu Settings",
+            "flags": {
+                "FFlagGameBasicSettingsFramerateCap5": "True",
+                "DFIntTaskSchedulerTargetFps": "0"
+            }
+        },
+        {
+            "name": "Unlimited FPS Unlocker",
+            "flags": {
+                "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+                "DFIntTaskSchedulerTargetFps": "9999"
+            }
+        },
+        {
+            "name": "GUI Hiding Toggles",
+            "flags": {
+                "FFlagUserShowGuiHideToggles": "True",
+                "GuiHidingApiSupport2": "True"
+            }
+        },
+        {
+            "name": "Hide guis",
+            "description": "IMPORTANT: Replace 'ID' with any group ID that you are in.<br></br>Key Combination: Action<br></br>Ctrl + Shift + B: Toggles GUIs in 3D space (BillboardGuis, SurfaceGuis, etc.)<br></br>Ctrl + Shift + C: Toggles game-defined ScreenGuis<br></br>Ctrl + Shift + G: Toggles Roblox CoreGuis<br></br>Ctrl + Shift + N: Toggles player names, and other BillboardGuis that show up above a player",
+            "flags": {
+                "DFIntCanHideGuiGroupId": "ID"
+            }
+        },
+        {
+            "name": "Remove layared clothing related for searching in lua app catalog",
+            "flags": {
+                "FStringAXCategories": "ClassicShirts.ClassicTShirts.ClassicPants"
+            }
+        },
+        {
+            "name": "Disable Fullscreen Title Bar",
+            "flags": {
+                "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+            }
+        },
+        {
+            "name": "Stuttery Animation Fix",
+            "flags": {
+                "DFIntTimestepArbiterThresholdCFLThou": "300"
+            }
+        },
+        {
+            "name": "Disable In-game Advertisements",
+            "flags": {
+                "FFlagAdServiceEnabled": "False"
+            }
+        },
+        {
+            "name": "Disable Telemetry",
+            "flags": {
+                "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+                "FFlagDebugDisableTelemetryEphemeralStat": "True",
+                "FFlagDebugDisableTelemetryEventIngest": "True",
+                "FFlagDebugDisableTelemetryPoint": "True",
+                "FFlagDebugDisableTelemetryV2Counter": "True",
+                "FFlagDebugDisableTelemetryV2Event": "True",
+                "FFlagDebugDisableTelemetryV2Stat": "True"
+            }
+        },
+        {
+            "name": "Surf the web inside of Roblox",
+            "description": "IMPORTANT: Click the Beta badge or the 13+ badge to open the webview browser.",
+            "flags": {
+                "FFlagTopBarUseNewBadge": "True",
+                "FStringTopBarBadgeLearnMoreLink": "https://google.com/",
+                "FStringVoiceBetaBadgeLearnMoreLink": "https://google.com/"
+            }
+        },
+        
+    ],
+
     "Physics (Abusive)": [
         {
             "name": "Random High Jumps",
